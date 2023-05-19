@@ -1,0 +1,16 @@
+#firstDiv{
+text-align: center;
+background-image: radial-gradient(rgba(129, 138, 216, 0.5),rgb(145, 172, 247),rgb(95, 127, 201));
+border-radius: 10%;
+font-family:cursive;
+font-size: 2em;
+}
+/* #secondDiv{
+    margin: auto;
+    padding: 2%;
+    width: 35%;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;  
+} */

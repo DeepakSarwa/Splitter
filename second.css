@@ -1,0 +1,7 @@
+.container-fluid{
+    border: 1px solid black;
+    width: 85%;
+}
+ul>li{
+    list-style: none;
+}

@@ -19,19 +19,85 @@
     ></script>
   </head>
   <body>
-    <button type="button" class="btn btn-danger">Create Group</button>
-    <div class="container-fluid">
-        <ul>
-            <li>
-                <h3>X</h3>
-            </li>
-            <li>
-                <h3>Y</h3>
-            </li>
-            <li>
-                <h3>Z</h3>
-            </li>
-        </ul>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      Add Group
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Create Group
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <label for="GroupName" class="GroupFont">Group Name:</label>
+              <input
+                type="text"
+                name="GroupName"
+                id="GroupName"
+                placeholder="Splitter Buddy"
+              />
+              <br /><br />
+              <label for="Participant" class="GroupFont">Add Members :</label
+              ><br />
+              <input
+                type="email"
+                name="Participant"
+                id="Participant"
+                placeholder="Deepak Sarwa"
+                required
+              />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-danger">Confirm</button>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="container-fluid">
+      <ul>
+        <li>
+          <h3>Group 1</h3>
+        </li>
+        <li>
+          <h3>Group 2</h3>
+        </li>
+        <li>
+          <h3>Group 3</h3>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

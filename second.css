@@ -8,6 +8,12 @@
 ul>li{
     list-style: none;
 }
+ul>li>a{
+    text-decoration: none;
+    text-shadow:1px 1px grey;
+    font-size: larger;
+    color: black;
+}
 .GroupFont{
     font-weight: 500;
 }

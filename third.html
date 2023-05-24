@@ -22,14 +22,92 @@
     <header>
       <h2 id="gname">Group Name</h2>
     </header>
+
+    <!-- Button trigger modal -->
     <button
       type="button"
-      class="btn btn-primary"
+      class="btn btn-success"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
     >
-      Launch demo modal
+      Split Amount
     </button>
-    <!-- Vertically centered modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label
+              for="splitamount"
+              class="modal-title fs-10"
+              id="exampleModalLabel"
+              >Enter Amount
+            </label>
+            &nbsp;
+            <input type="number" name="splitamount" id="splitamount" />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                User 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                User 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="flexRadioDefault"
+                id="flexRadioDefault3"
+              />
+              <label class="form-check-label" for="flexRadioDefault3">
+                User 3
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Discard
+            </button>
+            <button type="button" class="btn btn-primary">
+              Confirm Request
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -53,7 +53,9 @@ nav,
 section {
     display: block;
 }
-
+.fa-solid{
+    text-align: end;
+}
 body {
     font-family: Open Sans, sans-serif;
     font-size: 1rem;
@@ -170,12 +172,17 @@ input {
 button {
     text-transform: none;
 }
-
+#GroupName{
+    text-align: center;
+}
+#Participant{
+    text-align: center;
+}
 button,
 [type='reset'],
-[type='submit'] {
+/* [type='submit'] {
     -webkit-appearance: button;
-}
+} */
 
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -194,9 +201,9 @@ input[type='checkbox'] {
 input[type='date'],
 input[type='time'],
 input[type='datetime-local'],
-input[type='month'] {
+/* input[type='month'] {
     -webkit-appearance: listbox;
-}
+} */
 
 legend {
     font-size: 1.5rem;
@@ -219,10 +226,10 @@ progress {
     height: auto;
 }
 
-[type='search'] {
+/* [type='search'] {
     outline-offset: -2px;
     -webkit-appearance: none;
-}
+} */
 
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
@@ -1446,14 +1453,20 @@ a.btn-icon-only {
     font-size: .8125rem;
     white-space: nowrap;
 }
+.GroupFont{
+    font-size: large;
+ }
 
 .table.align-items-center td,
 .table.align-items-center th {
     vertical-align: middle;
 }
-
+#group-button{
+    background-color: #172b4d;
+}
 .table .thead-dark th {
-    color: #4d7bca;
+
+    color: #e0e2e5;
     background-color: #1c345d;
 }
 

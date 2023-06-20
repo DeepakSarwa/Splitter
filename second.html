@@ -25,6 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./main.js"></script>
   </head>
   <body>
     <!-- new desing implementation -->
@@ -74,27 +75,32 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form action="">
+            <form action="" id="addNewGroup">
               <label for="GroupName" class="GroupFont"></label>
               <div class="form-group text-center">
                 <input
                   type="text"
                   name="GroupName"
                   id="GroupName"
-                  placeholder="Group Name"
+                  placeholder="Group name"
                   class=""
                 />
               </div>
              
-              <div class="form-group text-center mt-2">
+              <div class="form-group text-center mt-2" id="emailField">
                 <input
                 type="email"
                 name="Participant"
-                class=""
                 id="Participant"
-                placeholder="Deepak Sarwa"
+                placeholder="Enter email"
                 required
               />
+               <!-- <div class="btn btn-danger btn-sm">remove</div> -->
+              </div>
+              <div class="form-group text-center mt-2">
+                <button class="btn btn-dark" type="email"
+                name="Participant"
+                id="addParticipant" onclick="addMoreField()"><i class="fa-solid fa-person-circle-plus"></i></button>
               </div>
             </form>
           </div>
@@ -133,7 +139,7 @@
                             />
                           </a>
                           <div class="media-body">
-                            <span class="mb-0 text-sm">PG Hyderabad</span>
+                            <span class="mb-0 text-sm" id="open">PG Hyderabad</span>
                           </div>
                         </div>
                       </th>
@@ -243,7 +249,7 @@
                             <img alt="Image placeholder" src="./family.jpg" />
                           </a>
                           <div class="media-body">
-                            <span class="mb-0 text-sm">Family</span>
+                            <span class="mb-0 text-sm" id="open">Family</span>
                           </div>
                         </div>
                       </th>
@@ -356,7 +362,7 @@
                             />
                           </a>
                           <div class="media-body">
-                            <span class="mb-0 text-sm">Cousions</span>
+                            <span class="mb-0 text-sm" id="open">Cousions</span>
                           </div>
                         </div>
                       </th>
@@ -469,7 +475,7 @@
                             />
                           </a>
                           <div class="media-body">
-                            <span class="mb-0 text-sm">Job portal</span>
+                            <span class="mb-0 text-sm" id="open">Job portal</span>
                           </div>
                         </div>
                       </th>
@@ -582,7 +588,7 @@
                             />
                           </a>
                           <div class="media-body">
-                            <span class="mb-0 text-sm">Interbiz </span>
+                            <span class="mb-0 text-sm" id="open">Interbiz </span>
                           </div>
                         </div>
                       </th>
@@ -602,7 +608,7 @@
                           >
                             <img
                               alt="Image placeholder"
-                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/team-1-800x800.jpg"
+                              src="./abhi .jpg"
                               class="rounded-circle"
                             />
                           </a>
@@ -614,7 +620,7 @@
                           >
                             <img
                               alt="Image placeholder"
-                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/team-2-800x800.jpg"
+                              src="./anil.jpg"
                               class="rounded-circle"
                             />
                           </a>
@@ -626,7 +632,7 @@
                           >
                             <img
                               alt="Image placeholder"
-                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/team-3-800x800.jpg"
+                              src="./deep.jpg"
                               class="rounded-circle"
                             />
                           </a>
@@ -638,7 +644,7 @@
                           >
                             <img
                               alt="Image placeholder"
-                              src="https://raw.githack.com/creativetimofficial/argon-dashboard/master/assets/img/theme/team-4-800x800.jpg"
+                              src="./ro.jpg"
                               class="rounded-circle"
                             />
                           </a>
